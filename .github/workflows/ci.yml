@@ -28,4 +28,4 @@ jobs:
         run: python -m py_compile app.py
 
       - name: Build Docker image
-        run: docker build -t cloud-devops-app:ci .
+        docker build -t automated-cicd-web-app:ci .

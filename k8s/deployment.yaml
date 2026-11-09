@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: cloud-devops-container
-          image: cloud-devops-app:1.0
+          image: automated-cicd-web-app:1.0
           imagePullPolicy: Never
           ports:
             - containerPort: 5000
