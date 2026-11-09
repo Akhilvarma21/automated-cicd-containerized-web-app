@@ -1,24 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
-
 metadata:
-  name: cloud-devops-app
-
+  name: automated-cicd-web-app
 spec:
   replicas: 2
-
   selector:
     matchLabels:
-      app: cloud-devops-app
-
+      app: automated-cicd-web-app
   template:
     metadata:
       labels:
-        app: cloud-devops-app
-
+        app: automated-cicd-web-app
     spec:
       containers:
-        - name: cloud-devops-container
+        - name: automated-cicd-container
           image: automated-cicd-web-app:1.0
           imagePullPolicy: Never
           ports:
